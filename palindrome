@@ -1,0 +1,4 @@
+pal<-function(x){
+  x<-rev(as.numeric(strsplit(as.character(x),"")[[1]]))
+  x<-paste(x,collapse = "")
+  x==b}
