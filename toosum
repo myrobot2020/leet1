@@ -1,0 +1,12 @@
+a<-c(1,5,6,8,9,4,1,2,5,3,6,8)
+b<-9
+
+toosum<-function(x,y){
+  x<-combn(x,2)
+  x<-data.frame(x)
+  x<-rbind(x,colSums(x))
+  x<-x[,x[3,]==9]
+  x<-x[c(1,2),]
+  x<-x[1]
+  print(x)
+}
