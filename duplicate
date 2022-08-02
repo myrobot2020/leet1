@@ -1,0 +1,6 @@
+nums <-c(0,0,1,1,1,2,2,3,3,4)
+
+
+a<-function(x){
+  x<-length(unique(x))
+  print(x)}
