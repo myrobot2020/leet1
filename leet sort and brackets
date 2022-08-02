@@ -1,0 +1,23 @@
+a<-c("(){}[}")
+para<-function(x){
+  x<-substring(x, seq(1, nchar(x), 2), seq(2, nchar(x), 2))
+  z<-data.frame(combn(c("(",")","[","]","{","}"),2))
+  z<-paste(z[1,],z[2,],sep = "")
+  z<-z[c(2,3,4,5,6,7,8,9,11,12,13,14)]
+  x<-x %in% z
+  x<-any('TRUE'==x)
+  print(x)
+}
+aa<-para(a)
+
+
+
+list1 <-c(1,2,4)
+list2 <- c(1,3,4)
+
+
+so<-function(x,y){
+  z<-c(x,y)
+  z<-sort(z)
+  print(z)
+}
